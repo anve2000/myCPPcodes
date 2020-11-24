@@ -1,5 +1,3 @@
-#include<iostream>
-using namespace std;
 
 int main()
 {
@@ -7,19 +5,13 @@ int main()
 	cin>>num;
 	n=2;
 	while(n<=num)
-	{
-		count=0;
-		i=2;
-	while(i<n)
-	{
-		if(n%i==0)
-		{
-			i=n;
-			count++;
-		}
+        {
+                i=2;
+	while(i<n && n%i!=0)
+	       {
 		i=i+1;
-	}
-      if(count==0)
+	       }
+      if(i==n)
 		{
 			cout<<n<<endl;
 		}
